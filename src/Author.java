@@ -12,10 +12,10 @@ public class Author extends Person {
         books = new ArrayList();
     }
 
-    /**
-     * @deprecated Use addBook instead
-     */
-    @Deprecated
+//    /**
+//     * @deprecated Use addBook instead
+//     */
+//    @Deprecated
     public List<String> getBooks() {
         return books;
     }
