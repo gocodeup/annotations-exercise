@@ -29,7 +29,7 @@ public class Author extends Person {
     }
 
     @Override
-    public String sortName() {
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
