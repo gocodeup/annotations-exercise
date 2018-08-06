@@ -1,7 +1,10 @@
 /**
  * This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
-public class Person {
+public class Person
+
+{
+@SuppressWarnings({"unchecked, deprecated, overrides"})
     protected String firstName;
     protected String lastName;
 
