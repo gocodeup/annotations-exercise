@@ -4,7 +4,7 @@ public class Main {
 
         author.addBook("Practical Object-Oriented Design in Ruby");
         author.addBook("99 Bottles of OOP");
-
+        //updated getbook to publishedBooks
         for (String book: author.publishedBooks()) {
             System.out.println(book);
         }
