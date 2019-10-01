@@ -1,4 +1,5 @@
 public class Main {
+//    @SuppressWarnings("deprication")
     public static void main(String[] args) {
         Author author = new Author("Sandi", "Metz");
 

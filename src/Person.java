@@ -14,7 +14,7 @@ public class Person {
         return String.format("%s %s", firstName, lastName);
     }
 
-    public String sortName() {
-        return String.format("%s, %s", lastName, firstName);
-    }
+//    public String sortName() {
+//        return String.format("%s, %s", lastName, firstName);
+//    }
 }
