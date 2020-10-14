@@ -29,7 +29,9 @@ public class Author extends Person {
     }
 
     @Override
-    public String sortName() {
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
+    //changed name to match Person class full name, and switched first
+    //and last name order
 }
