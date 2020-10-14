@@ -15,7 +15,7 @@ public class Author extends Person {
     /**
      * @deprecated Use publishedBooks instead
      */
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings({"deprecation", "unchecked"})
     @Deprecated
     public List<String> getBooks() {
         return books;
