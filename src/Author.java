@@ -3,7 +3,7 @@
  */
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("all")
 public class Author extends Person {
     private List books;
 
@@ -11,7 +11,7 @@ public class Author extends Person {
         super(firstName, lastName);
         books = new ArrayList();
     }
-
+    @SuppressWarnings("all")
     /**
      * @deprecated Use publishedBooks instead
      */
@@ -19,7 +19,6 @@ public class Author extends Person {
     public List<String> getBooks() {
         return books;
     }
-
     public List<String> publishedBooks() {
         return books;
     }
