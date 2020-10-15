@@ -4,16 +4,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"deprecation", "unchecked"})
 public class Author extends Person {
-    private List<String> books;
+    private List books;
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList<String>();
+        books = new ArrayList();
     }
 
     /**
-     * @deprecated Use publishedBooks instead
+     * @deprecated Use addBook instead
      */
     @Deprecated
     public List<String> getBooks() {
@@ -31,5 +32,4 @@ public class Author extends Person {
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
-
 }
