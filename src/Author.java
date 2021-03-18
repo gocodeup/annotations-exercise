@@ -28,6 +28,7 @@ public class Author extends Person {
         books.add(book);
     }
 
+
     @Override
     public String fullName() {
         return String.format("%s, %s", lastName, firstName);
