@@ -28,7 +28,7 @@ public class Author extends Person {
         books.add(book);
     }
 
-    @Override
+    @SuppressWarnings("all")
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
