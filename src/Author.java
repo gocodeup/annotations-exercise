@@ -28,7 +28,7 @@ public class Author extends Person {
     public void addBook(String book) {
         books.add(book);
     }
-
+    //I had to fix this in easy_fix??
     //@Override
     public String sortName(String firstName, String lastName) {
         return String.format("%s, %s", lastName, firstName);
