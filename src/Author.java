@@ -4,6 +4,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//@SuppressWarnings({"unchecked", "deprecation"})
 public class Author extends Person {
     private List books;
 
@@ -27,9 +28,9 @@ public class Author extends Person {
     public void addBook(String book) {
         books.add(book);
     }
-
-    @Override
-    public String sortName() {
+    //I had to fix this in easy_fix??
+    //@Override
+    public String sortName(String firstName, String lastName) {
         return String.format("%s, %s", lastName, firstName);
     }
 }
