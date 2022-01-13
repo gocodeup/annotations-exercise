@@ -6,12 +6,14 @@ import java.util.List;
 
 //@SuppressWarnings({"unchecked", "deprecation"})
 public class Author extends Person {
-    private List books;
+    private final List<String> books;
 
-    public Author(String firstName, String lastName) {
+    public Author(String firstName, String lastName){
         super(firstName, lastName);
-        books = new ArrayList();
+        books = new ArrayList<>();
+
     }
+
 
     /**
      * @deprecated Use publishedBooks instead
@@ -26,11 +28,11 @@ public class Author extends Person {
     }
 
     public void addBook(String book) {
-        books.add(book);
+       books.add(book);
     }
     //I had to fix this in easy_fix??
-    //@Override
-    public String sortName(String firstName, String lastName) {
+
+    public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
