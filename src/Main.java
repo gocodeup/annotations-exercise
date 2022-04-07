@@ -10,3 +10,5 @@ public class Main {
         }
     }
 }
+
+// java -d out/ src/*
